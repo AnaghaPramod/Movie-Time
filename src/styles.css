@@ -1,0 +1,13 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Julius+Sans+One&family=Montserrat+Alternates&family=Nanum+Gothic&family=Playfair+Display:wght@600&family=Urbanist:wght@200&family=Varela+Round&display=swap');
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.card-img-top:hover{
+    transform: scale(1.1);
+    transition: 0.5;
+    
+}
+.card{
+    margin-top:2cm;
+}

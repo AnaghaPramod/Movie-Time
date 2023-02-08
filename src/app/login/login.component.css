@@ -1,0 +1,29 @@
+
+.img1{
+    width: 3cm ;
+    height: 3cm;
+    border-radius: 50%;
+}
+
+
+.bk{
+    /* padding-top: 3cm; */
+    height:450px;
+    width:450px;
+   /* border-radius:1cm; */
+   
+   
+}
+
+
+
+.h4{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+/* .form{
+    border-radius: 5cm;
+}  */
+.row{
+    height:780px;
+    
+}

@@ -1,0 +1,26 @@
+1  ng new Movie time - to create project
+2  run angular - ng s -o
+3  index.html
+      add bootstrap
+      add font awesome- (font awesome cdn), goodle font
+4  lazy loading    
+      its a process of loading components and modules
+      it improves application load time and performance 
+
+      ng g m movies --route movies --module app.module
+
+5  create a component lazy loaded in the movie module 
+              all-movies - ng g c movies/all-movies
+              your-shows - ng g c movies/your-shows
+6  set up path for each module
+          movies-routing module
+7  pageNotFound - ng g c page-not-found       
+     setting path for page-not-found - app-routing.module
+8  creating header vand footer 
+     ng g c header
+     ng g c footer   
+9  designing of frontend
+10  integration  
+    a)  creating service for API call -  ng g s movies/api
+    b)  import HttpClientModule in movie module
+    c)  dependency injection HttpClient class in API services

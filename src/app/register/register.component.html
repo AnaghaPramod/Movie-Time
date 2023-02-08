@@ -1,0 +1,32 @@
+
+
+<div>
+    <div class="row">
+        <div class="col-4"></div>
+        <form [formGroup]="registerForm" class="bk col-4 mt-5 border border-5" style="box-shadow: 10px 10px 10px ;">
+            <h1 class=" text-center mt-4 mb-4"><i class="fa-solid fa-clapperboard"></i> Movie Time  </h1>
+
+            <div class="text-center">
+                <img class="img1 mb-4" src="../../assets/id.png" alt="">
+                </div>
+            <input formControlName="uname" type="text" class="form form-control  mb-3 " id="reg_uname" placeholder="Enter your full name" style="  box-shadow: inset 0 0 15px -2px ">
+            <div *ngIf="this.registerForm.get('uname')?.errors && this.registerForm.get('uname')?.touched" style="color:rgb(151, 29, 29);" class="mb-3">invalid username</div>
+            <input  type="text" class="form form-control  mb-3 " id="reg_age" placeholder="Age" style="  box-shadow: inset 0 0 15px -2px ">
+            <input  type="text" class="form form-control  mb-3 " id="reg_email" placeholder="email" style="  box-shadow: inset 0 0 15px -2px ">
+            <input  type="text" class="form form-control  mb-3 " id="reg_no" placeholder="Mobile number" style="  box-shadow: inset 0 0 15px -2px ">
+
+            <input formControlName="uid" type="text" class="form form-control mb-3 " id="reg_id" placeholder="User id" style=" box-shadow: inset 0 0 15px -2px ;">
+            <div *ngIf="this.registerForm.get('id')?.errors && this.registerForm.get('id')?.touched" style="color:rgb(151, 29, 29);" class="mb-3">invalid userid</div>
+            <input formControlName="pswd" type="password" class="form form-control mb-3" id="reg_pswd" placeholder="Password" style=" box-shadow: inset 0 0 15px -2px">
+            <div *ngIf="this.registerForm.get('pswd')?.errors && this.registerForm.get('pswd')?.touched" style="color:rgb(151, 29, 29);" class="mb-3">invalid password</div>
+            <div  class=" d-grid gap-2">
+                <button type="button" id="btn" class="ab btn btn-primary mb-3 shadow-lg" (click)="register()">Register</button>
+            </div>
+            <div class=" text-center mb-4 " >
+                <a routerLink="/" style="text-decoration:none;">Sign in</a>
+            </div>
+            
+          </form>
+        <div class="col-4"></div>
+    </div>
+  </div>

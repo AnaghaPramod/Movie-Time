@@ -1,0 +1,18 @@
+/* button{
+    width:1.5cm;
+} */
+.btn{
+    width:1.5cm;
+    margin: 10px;
+    align-content: center;
+}
+p{
+    margin: .5cm;
+}
+.submit{
+    width:3cm;
+    margin: .5cm;
+}
+#div{
+    margin-top: 6cm;
+}
