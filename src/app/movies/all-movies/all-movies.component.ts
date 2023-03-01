@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from 'src/app/data.service';
+import { DataService } from 'src/app/Services/data.service';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -12,7 +12,6 @@ export class AllMoviesComponent implements OnInit {
   user:any;
 
   constructor(private api:ApiService, private ds:DataService ){ 
-    this.user=this.ds.currentUser 
   }
 
   ngOnInit():void{
@@ -22,5 +21,22 @@ export class AllMoviesComponent implements OnInit {
       }
     )
   }
+
+booknow(movie:any){
+   this.api.booknow(movie).subscribe(
+    (result:any)=>{
+    },
+    (result:any)=>{
+    }   )
+}
+
+addtodetails(movie:any){
+this.api.addtodetails(movie).subscribe(
+  (result:any)=>{
+  },
+  (result:any)=>{
+  }
+)
+}
 
 }

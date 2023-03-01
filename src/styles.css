@@ -6,8 +6,19 @@ body{
 .card-img-top:hover{
     transform: scale(1.1);
     transition: 0.5;
+
+}
+/* .card{
+    margin-top:2cm;
+    margin-bottom: 2cm;
+} */
+footer{
+    /* position:fixed; */
+    bottom:0;
+    width:100%;
     
 }
-.card{
-    margin-top:2cm;
+.py-5{
+    margin-top: 2cm;
+    padding-bottom:4cm;
 }

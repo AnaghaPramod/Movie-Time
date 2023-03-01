@@ -11,10 +11,30 @@ const Movie = mongoose.model('Movie',{
     //schema creation
     title:String,
     year:Number,
-    duration:String,
+    runtime:String,
     poster:String
 })
 
+//create a model for booknow
+const Watchlist = mongoose.model('watchlist',{
+    title:String,
+    year:Number,
+    runtime:String,
+    poster:String
+})
+
+//create a model for addtodetails
+const Detail = mongoose.model('Detail',{
+    title:String,
+    trailer:String,
+    description:String,
+    director:String,
+    poster:String
+})
+
+
 module.exports={
-    Movie
+    Movie,
+    Watchlist,
+    Detail
 }

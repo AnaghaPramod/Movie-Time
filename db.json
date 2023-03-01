@@ -1,27 +1,44 @@
 
   [
     {
+      "id": "1",
       "Title": "The Lion King",
       "Year": "2019",
+      "Description":"Simba, a young lion prince, flees his kingdom after the murder of his father, Mufasa. Years later, a chance encounter with Nala, a lioness, causes him to return and take back what is rightfully his.",
+      "Trailer":"https://www.youtube.com/embed/7TavVZMewpY" ,
+      "Director": "Jon Favreau",
       "Runtime": "118 min",
       "Poster": "https://m.media-amazon.com/images/M/MV5BMjIwMjE1Nzc4NV5BMl5BanBnXkFtZTgwNDg4OTA1NzM@._V1_SX300.jpg"
     },
     {
+      "id":"2",
       "Title": "Mowgli: Legend of the Jungle",
       "Year": "2018",
+      "Description":"Human child Mowgli is raised by a wolf pack in the jungles of India. As he learns the often harsh rules of the jungle, under the tutelage of a bear named Baloo and a panther named Bagheera, Mowgli becomes accepted by the animals of the jungle as one of their own, but the fearsome tiger Shere Khan doesn't take a liking to him. But there may be greater dangers lurking in the jungle, as Mowgli comes face to face with his human origins.",
+      "Trailer":"https://www.youtube.com/embed/OVBjPpUlQrE",
+      "Director": "Andy Serkis",
       "Runtime": "104 min",
       "Poster": "https://m.media-amazon.com/images/M/MV5BMjMzODc2NzU5MV5BMl5BanBnXkFtZTgwNTMwMTE3NjM@._V1_SX300.jpg"
     },
     {
+      "id":"3",
       "Title": "Doctor Strange",
       "Year": "2016",
+      "Description":"In an accident, Stephen Strange, a famous neurosurgeon, loses the ability to use his hands. He goes to visit the mysterious Ancient One to heal himself and becomes a great sorcerer under her tutelage.",
+      "Trailer":"https://www.youtube.com/embed/HSzx-zryEgM",
+      "Director":" Scott Derrickson",
       "Runtime": "115 min",
       "Poster": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg"
     },
     {
+      "id":"4",
       "Title": "John Wick",
       "Year": "2014",
+      "Description":"John Wick, a retired hitman, is forced to return to his old ways after a group of Russian gangsters steal his car and kill a puppy gifted to him by his late wife.",
+      "Trailer":"https://www.youtube.com/embed/C0BMx-qxsP4",
+      "Director": "Chad Stahelski",
       "Runtime": "101 min",
       "Poster": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg"
     }
   ]
+

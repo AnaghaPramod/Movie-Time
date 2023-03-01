@@ -1,0 +1,74 @@
+
+<app-header></app-header>
+<!-- 
+<div>
+    <div class="row" *ngFor="let movie of detail">
+        <div class="col-6">
+            <img class="card-img-top" [src]="movie.poster" alt="..." >
+
+        </div>
+        <div class="col-6">
+            {{movie.description}}
+
+        </div>
+    </div>
+</div> -->
+<!-- Section-->
+<section class="py-5" >
+    <div class="container px-4 px-lg-5 mt-5" >
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"  >
+            <div class="col mb-5"  *ngFor="let movie of detail">
+                <div  class="card h-100" >
+                    <!-- Product image-->
+                    <!-- <video controls>
+                        <source [src]="movie.trailer" >
+                      </video> -->
+                      
+                    <img class="card-img-top" [src]="movie.poster" alt="..." >
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{movie.title}}</h5>
+                            <!-- Product price-->
+                            {{movie.description}}
+                            <br><br><br>
+                            <h5>Director:{{movie.director}}</h5>  <br>
+                            <p>{{movie.year}}</p>
+
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+
+                        <!-- <div class="text-center"><button class="btn btn-outline-success mt-auto" routerLink="/home"  >book your seat</button></div> -->
+                    </div>
+
+
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><button class="btn btn-outline-success mt-auto" routerLink="/movies" (click)="back(movie)" >Back </button></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    
+</section>
+
+
+
+<!-- <div id="card" class="card mb-3" *ngFor="let movie of detail">
+    <img  [src]="movie.poster" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div> -->
+
+
+<app-footer></app-footer>

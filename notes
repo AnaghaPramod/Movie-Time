@@ -1,0 +1,20 @@
+create package.json - npm init
+create node modules - npm i express
+create index.js     - import express
+                      create app using express
+                      setup port number
+                      use json parser for server response
+install cors        - npm i cors (for connecting backend and frontend)
+                      import cors
+                      specify the origin - http://localhost:4200
+create a folder service - dataServices.js & db.js                     
+install mongoose    - npm i mongoose (connect backend with mongodb)  
+                      import mongoose in db.js   
+                      define connection string
+                      create model for movies and export it
+resolving API calls in index.js
+                    - import dataservices
+create logic in dataservices 
+                    - import db
+                      define function
+final step define api call in index.js                                               

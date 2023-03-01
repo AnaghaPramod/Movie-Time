@@ -8,9 +8,9 @@
             <img class="img1 mb-4 " src="../../assets/id.png" alt="">
             </div>
             <!-- <h2 class="text-center">Movie Time</h2> -->
-            <input formControlName="id"  type="text" class="form form-control mb-3 " id="login_uid" placeholder="User id" style=" box-shadow: inset 0 0 15px -2px ">
-            <div *ngIf="this.loginForm.get('id')?.errors && this.loginForm.get('id')?.touched" style="color:rgb(151, 29, 29);" class="mb-3">Invalid username</div>
-            <input formControlName="pswd" type="password" class="form form-control mb-3 " id="login_pswd" placeholder="Password"  style=" box-shadow: inset 0 0 15px -2px ">
+            <input formControlName="uid" name="userid" type="text" class="form form-control mb-3 " id="login_uid" placeholder="User id" style=" box-shadow: inset 0 0 15px -2px ">
+            <div *ngIf="this.loginForm.get('uid')?.errors && this.loginForm.get('uid')?.touched" style="color:rgb(151, 29, 29);" class="mb-3">Invalid username</div>
+            <input formControlName="pswd" name="password" type="password" class="form form-control mb-3 " id="login_pswd" placeholder="Password"  style=" box-shadow: inset 0 0 15px -2px ">
             <div *ngIf="this.loginForm.get('pswd')?.errors && this.loginForm.get('pswd')?.touched" style="color:rgb(151, 29, 29);" class="mb-3">Incorrect password</div>
             <div class="d-grid gap-2">
                 <button type="button" class="btn btn-dark mb-3 shadow-lg"  (click)="login()">Login</button>

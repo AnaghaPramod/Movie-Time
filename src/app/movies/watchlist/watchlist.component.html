@@ -1,0 +1,97 @@
+<app-header></app-header>
+<!-- Section-->
+<section class="py-5" >
+
+    <div *ngFor="let movie of watchlist">
+        <div  class="text-start"><button class="btn btn-outline-success mt-auto" routerLink="/movies" (click)="remove(movie)" >Back </button></div>
+        <h1 class="text-center">{{movie.title}}</h1>
+        <!-- <img align-center  [src]="movie.poster" alt="..." /> -->
+
+
+    </div>
+<!-- 
+    <div class="container px-4 px-lg-5 mt-5" >
+        <div  class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"  >
+            <div class="col mb-5"  *ngFor="let movie of watchlist">
+    <div  class="text-start"><button class="btn btn-outline-success mt-auto" (click)="remove(movie)" >Remove </button></div>
+
+                <div class="card h-100" >
+                    
+                    <img class="card-img-top" [src]="movie.poster" alt="..." />
+                
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                        
+                            <h5 class="fw-bolder">{{movie.title}}</h5>
+                            
+                            {{movie.year}}
+                            <p>{{movie.runtime}}</p>  
+
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+
+                        <div class="text-center"><button class="btn btn-outline-success mt-auto" routerLink="/home"  >book your seat</button></div>
+                    </div>
+
+
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    </div>
+                </div>
+            </div>
+            
+                    
+                
+        </div>
+    </div> -->
+</section>
+
+<div id="div" class="container">
+
+      
+    
+    <div id="array" >
+     <button id="button" [ngClass]="{ 'active': button.clicks % 2 !== 0 }" *ngFor="let button of buttons"  (click)="handleClick(button) ">{{ button.value }}</button>
+   </div>
+ <br> <br>
+ 
+   <h5 class="ms-5">Number of seats:{{seatcount}}</h5>
+ <h5 class="ms-5">Amount:{{total}} </h5>
+ <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="submit btn btn-outline-success ms-5">Submit</button>
+ </div>
+
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Confirm your booking</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" placeholder="Enter your name" class="form-control mb-2">
+          <input type="text" placeholder="Mobile number" class="form-control mb-2">
+          <input type="text" placeholder="place" class="form-control mb-2">
+          <input type="date" placeholder="date " class="form-control mb-2">
+          <input type="time" placeholder="time" class="form-control mb-2">
+
+
+
+        </div>
+        <div>
+            <h5 class="ms-3">Ticket</h5>
+            <br>
+            <img class="ms-5" width="100px" src="https://media.istockphoto.com/id/828088276/vector/qr-code-illustration.jpg?s=612x612&w=0&k=20&c=FnA7agr57XpFi081ZT5sEmxhLytMBlK4vzdQxt8A70M=" alt="">
+        <p>Amount to be paid:{{total}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" (click)="proceed()">Proceed</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<app-footer></app-footer>
